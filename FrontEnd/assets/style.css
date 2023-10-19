@@ -1,0 +1,552 @@
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** end reset css**/
+body {
+	max-width: 1140px;
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+	background-color: rgba(255, 254, 248, 1);
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+section {
+	margin: 50px 0
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+nav li a{
+	text-decoration: none;
+	color: black;
+}
+nav li a:hover{
+	font-weight: bolder;
+}
+
+li:hover {
+	color: #B1663C;
+}
+#introduction {
+	display: flex;
+	align-items: center;
+}
+#introduction figure {
+	flex: 1
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+}
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery figure {
+	width: 100%;
+	height: 100%;
+}
+.gallery figure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#contact,#login {
+	width: 50%;
+margin: auto;
+}
+#contact > *,
+#login  > *{
+	text-align: center;
+
+}
+#contact h2,
+#login h2{
+	margin-bottom: 20px;
+}
+#contact form,
+#login form{
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input,
+#login input{
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label,
+#login label{
+	margin: 2em 0 1em 0;
+}
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}
+
+/*********************************************************************************************/
+/****************************** DEBUT DU CSS SUPPLEMENTAIRE INDEX.HTML ***********************/
+/*********************************************************************************************/
+
+
+/**********************************/
+/****** Filter ********************/
+/**********************************/
+
+.filter{
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap : 20px;
+}
+
+.filter p{
+	border: 1px solid #1D6154;
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19.2px;
+	text-align: center;
+	border-radius: 60px;
+	padding: 10px 10px;
+	min-width: 100px;
+	margin: 20px 0 50px 0;
+}
+.filter p:hover{
+	border: 1px solid transparent;
+	color: white;
+	background-color: #1D6154;
+	cursor: pointer;
+}
+
+/**********************************/
+/****** Contact Form **************/
+/**********************************/
+
+.contactMsg{
+	color: red;
+	text-decoration: underline;
+	font-size: 1rem;
+}
+
+/**********************************/
+/****** FOOTER ********************/
+/**********************************/
+
+footer li{
+	cursor: pointer;
+}
+
+
+/*********************************************************************************************/
+/****************************** DEBUT DU CSS SUPPLEMENTAIRE LOGIN.HTML ***********************/
+/*********************************************************************************************/
+
+.main-login{
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 150px - 72.8px);
+	margin: 0;
+
+}
+
+.loginBtn{
+	width: auto;
+	border: 1px solid #1D6154;
+	color: white;
+	background-color: #1D6154;
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19.2px;
+	text-align: center;
+	border-radius: 60px;
+	padding: 10px;
+	margin: 25px 0;
+	cursor: pointer;
+}
+
+.loginBtn:hover{
+	border: 1px solid #1D6154 !important;
+	color: #1D6154;
+	background-color: white;
+}
+
+#login p {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#login p:hover {
+	font-weight: bolder;
+}
+
+.contactMsg,
+.errorLogin{
+	color: red;
+	text-decoration: underline;
+	font-size: 1rem;
+}
+
+/*********************************************************************************************/
+/****************************** DEBUT DU CSS SUPPLEMENTAIRE DES MODALES **********************/
+/*********************************************************************************************/
+
+/************************************************************/
+/****** Modification au dessus du header ********************/
+/************************************************************/
+
+.edit-mode{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	color:white;
+	background-color: black;
+
+}
+
+/************************************************************/
+/****** Modification de la zone de filtre *******************/
+/************************************************************/
+
+.edit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+.edit h2{
+	margin-bottom: 0px;
+}
+
+.edit div{
+	display: flex;
+	padding-left: 30px;
+}
+
+.edit div p{
+	padding-left: 10px;
+}
+
+/************************************************************/
+/****** Création de la modale "edit-1" **********************/
+/************************************************************/
+
+.edit-1{
+	background-color: rgba(255, 255, 255, 1);
+	height: auto;
+	width: 500px;
+
+	display: none;
+	position: fixed;
+	top: 150px;
+	left: 35%;
+
+	border-radius: 5px;
+	padding: 0 50px;
+}
+
+.edit-1 i{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.edit-1 h2{
+	text-align: center;
+	padding: 30px 0;
+}
+
+.edit-1 .img-area{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 10px;
+}
+
+.edit-1 .img-area .img-area-display{
+	width: calc(20% - 10px);
+	height: 100px;
+	object-fit: cover;
+	position: relative;
+}
+
+.edit-1 .img-area .img-area-display img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.edit-1 .img-area .img-area-display i{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: white;
+	background-color: black;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+#btn-area1{
+	margin-top: 25px;
+	border-top: 1px solid black;
+}
+
+.edit-1 p{
+	border: 1px solid #1D6154;
+	color: white;
+	background-color: #1D6154;
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19.2px;
+	text-align: center;
+	border-radius: 60px;
+	padding: 10px 10px;
+	margin: 25px 20%;
+}
+
+.edit-1 p:hover{
+	border: 1px solid black;
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
+
+/************************************************************/
+/****** Création de la modale "edit-2" **********************/
+/************************************************************/
+
+.edit-2{
+	background-color: rgba(255, 255, 255, 1);
+	height: auto;
+	width: 500px;
+
+	position: fixed;
+	top: 150px;
+	left: 35%;
+
+	border-radius: 5px;
+	padding: 0 50px;
+}
+
+.edit-2 h2{
+	text-align: center;
+	padding: 30px 0;
+}
+
+.edit-2-icons :nth-child(1){
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.edit-2-icons :nth-child(2){
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.edit-2 form{
+	display: flex;
+	flex-direction: column;
+}
+
+.custom-file-input {
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.custom-file-label {
+	height: 120px;
+	background-image: url("./images/input-file.png");
+	background-color: rgb(229, 239, 244);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 15px;
+	box-shadow: 0px 4px 14px 0px #00000017;
+	cursor: pointer;
+}
+
+.edit-2 form input[type="text"],
+.edit-2 form select{
+	height: 30px;
+	margin: 5px 0;
+	border-radius: 3px;
+	border: transparent;
+	box-shadow: 0px 4px 14px 0px #00000017;
+
+}
+
+.edit-2 form input[type="text"]:active,
+.edit-2 form input[type="text"]:focus,
+.edit-2 form select:active,
+.edit-2 form select:focus{
+	outline: none;
+
+}
+
+.edit-2 form label{
+	margin-top: 10px;
+}
+
+.titleEdit{
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+
+}
+
+.upload-box {
+    position: relative;
+    width: 100%;
+	display: flex;
+	justify-content: center;
+    height: 250px;
+}
+
+.upload-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.upload-background {
+    height: 200px;
+	background-image: url("./images/input-file.png");
+	background-color: rgb(229, 239, 244);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 15px;
+	box-shadow: 0px 4px 14px 0px #00000017;
+	cursor: pointer;
+}
+/************************************************************/
+/****** Zone btn area des modales 1 et 2 ********************/
+/************************************************************/
+
+#btn-area1,
+#btn-area2{
+	margin-top: 25px;
+	border-top: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.edit-1 button,
+.edit-2 button{
+	width: 75%;
+	border: 1px solid #1D6154;
+	color: white;
+	background-color: #1D6154;
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19.2px;
+	text-align: center;
+	border-radius: 60px;
+	padding: 10px;
+	margin: 25px 0;
+	cursor: pointer;
+}
+
+.edit-1 button:hover,
+.edit-2 button:hover{
+	border: 1px solid #1D6154;
+	color: #1D6154;
+	background-color: white;
+}
+
+#imageUpload {
+    display: none;
+}
